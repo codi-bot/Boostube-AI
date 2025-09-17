@@ -10,7 +10,7 @@ export default function TopKeywords() {
   const canvasRef = useRef(null);
 
   useEffect(() => {
-    document.title=" Keyword Checker | Boostube AI"
+    document.title="Free Keywords Checker – Find SEO Keywords & Boost Rankings"
   },[])
 
   // 🎇 Particle Background (infinite float + click to remove)
@@ -221,3 +221,4 @@ export default function TopKeywords() {
     </div>
   );
 }
+
