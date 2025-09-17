@@ -8,7 +8,7 @@ export default function ScriptWriter() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-      document.title=" Script | Boostube AI"
+      document.title="AI Script Writer – Generate Engaging Scripts in Seconds (Free)"
     },[])
   
 
@@ -146,3 +146,4 @@ export default function ScriptWriter() {
     </div>
   );
 }
+
