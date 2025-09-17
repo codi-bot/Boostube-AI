@@ -87,23 +87,25 @@ function Home() {
       >
         {tools.map((tool, i) => (
           <motion.button
-            key={i}
-            onClick={() => navigate(tool.route)} // ✅ Route navigation
-            whileHover={{
-              scale: 1.12,
-              boxShadow: "0 0 25px #00ff99, 0 0 50px #00ff99",
-            }}
-            whileTap={{ scale: 0.9 }}
-            className="relative py-4 rounded-2xl border border-green-400 text-white font-semibold 
-                       bg-transparent transition-all duration-500 ease-in-out 
-                       overflow-hidden group"
-          >
-            <span className="relative z-10">{tool.name}</span>
-            {/* Neon Background Effect */}
-            <span className="absolute inset-0 bg-green-500 opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out"></span>
-          </motion.button>
+  key={i}
+  onClick={() => navigate(tool.route)} // ✅ Route navigation
+  whileHover={{
+    scale: 1.12,
+    boxShadow: "0 0 25px #00ff99, 0 0 50px #00ff99",
+  }}
+  whileTap={{ scale: 0.9 }}
+  className="relative w-[85%] sm:w-full max-w-xs py-3 rounded-2xl border border-green-400 text-white font-semibold 
+             bg-transparent transition-all duration-500 ease-in-out 
+             overflow-hidden group mx-auto"
+>
+  <span className="relative z-10">{tool.name}</span>
+  {/* Neon Background Effect */}
+  <span className="absolute inset-0 bg-green-500 opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out"></span>
+</motion.button>
+
         ))}
       </motion.div>
 
       {/* Info Section */}
+
       <div className="max-w-4xl mx-auto mt-16 px-6 text-center text-white mt-40"> <h2 className="text-3xl font-bold mb-6">Why Choose Boostube AI?</h2> <p className="text-lg leading-relaxed mb-6"> Boostube AI is your ultimate YouTube growth companion, built with cutting-edge artificial intelligence to help you dominate the world’s biggest video platform. Whether you’re a beginner dreaming of starting your channel or a seasoned creator looking to break through the competition, Boostube AI equips you with powerful, easy-to-use tools that take the guesswork out of YouTube success. </p> <p className="text-lg leading-relaxed mb-6"> Our platform combines creativity with advanced analytics to give you everything you need in one place: trending video ideas, perfectly written scripts, SEO-optimized keywords, and click-worthy titles. Every tool is designed to save you time, boost your confidence, and make your content stand out in a crowded space. </p> <p className="text-lg leading-relaxed mb-6"> What makes Boostube AI unique is the balance between simplicity and power. While our AI is highly advanced under the hood, we’ve built the interface to be intuitive and user-friendly—so you don’t need to be a tech expert to get professional results. With just a few clicks, you can unlock new content opportunities and grow faster than ever. </p> <p className="text-lg leading-relaxed mb-6"> Boostube AI is more than just a tool—it’s your creative partner. It helps you stay motivated by constantly providing fresh ideas and solutions. Instead of struggling to come up with content or worrying about the right titles, you can focus on what you do best: creating videos and engaging your audience. </p> <p className="text-lg leading-relaxed mb-6"> Join the future of YouTube growth today. With Boostube AI by your side, you’ll never run out of inspiration, never waste time guessing what works, and always stay ahead of the curve. Whether your goal is to go viral, build a loyal community, or turn YouTube into a career, Boostube AI is here to make it happen. </p> <p className="text-xl font-semibold mt-8 text-green-400"> Boost your creativity. Boost your growth. Boost your channel—with Boostube AI. </p> </div> </div> ) } export default Home
