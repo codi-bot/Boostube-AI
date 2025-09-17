@@ -12,7 +12,7 @@ export default function IdeasFinder() {
   const [particles, setParticles] = useState([]);
 
   useEffect(() => {
-      document.title=" Ideas Finder | Boostube AI"
+      document.title="AI Ideas Finder – Instantly Discover Viral & Creative Ideas"
     },[])
   
 
@@ -187,3 +187,4 @@ export default function IdeasFinder() {
     </div>
   );
 }
+
