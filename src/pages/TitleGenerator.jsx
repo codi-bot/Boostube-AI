@@ -8,7 +8,7 @@ export default function TitleGenerator() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-      document.title=" Title Generator | Boostube AI"
+      document.title="Catchy Title Generator – Create Click-Worthy Titles with AI"
     },[])
   
 
@@ -156,4 +156,5 @@ useEffect(() => {
       </div>
     </div>
   );
+
 }
